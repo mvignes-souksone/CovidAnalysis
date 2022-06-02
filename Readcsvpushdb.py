@@ -43,7 +43,6 @@ print(r)
 l3 = r.json()
 len(l3)
 
-r.json()[0]['subregion']
 
 
 def filter_response(r):
