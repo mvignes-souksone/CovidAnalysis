@@ -70,7 +70,6 @@ print(table2)
 
 table2.to_sql("subregion",engine, if_exists='replace')
 
-df.Country.isin(table2.Country).astype(int)
 
 df = df.merge(table2, left_on='Country', right_on='Country')
 
