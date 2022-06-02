@@ -20,7 +20,6 @@ print(ds)
 ds2 = df.groupby('Continent')['Total Cases'].sum()
 print(ds2)
 
-ds2[ds2 == ds2.max()]
 
 engine = create_engine('postgresql://postgres:password@localhost:5432/postgres')
 df.to_sql("covid",engine,if_exists='replace')
